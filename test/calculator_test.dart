@@ -13,4 +13,8 @@ void main() {
   final calculator = Calculator();
   expect(calculator.add('1'), equals(1));
 });
+test('returns the sum of two comma-separated numbers', () {
+  final calculator = Calculator();
+  expect(calculator.add('1,2'), equals(3));
+});
 }
