@@ -21,4 +21,8 @@ test('returns the sum of multiple comma-separated numbers', () {
   final calculator = Calculator();
   expect(calculator.add('1,2,3,4'), equals(10));
 });
+test('returns the sum when input includes newline as delimiter', () {
+  final calculator = Calculator();
+  expect(calculator.add('1\n2,3'), equals(6));
+});
 }
