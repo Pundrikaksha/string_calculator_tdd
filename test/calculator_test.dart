@@ -9,4 +9,8 @@ void main() {
       expect(calculator.add(''), equals(0));
     });
   });
+  test('returns the number itself when input is a single number', () {
+  final calculator = Calculator();
+  expect(calculator.add('1'), equals(1));
+});
 }
