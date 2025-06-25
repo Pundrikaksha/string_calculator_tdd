@@ -1,10 +1,28 @@
 # string_calculator_tdd
 
-A new Flutter project.
 
-##  Built with Test-Driven Development
 
-This project demonstrates TDD using Flutter:
-- Each feature begins with a failing test
-- Only minimum code is added to pass tests
-- All logic is fully covered by unit tests
+
+
+---
+
+##  Features Implemented
+
+- Returns `0` for an empty string
+- Returns the number itself for a single input
+- Handles multiple comma-separated numbers
+- Handles newline `\n` as a valid delimiter
+- Supports custom single-character delimiters using `//[delimiter]\n[numbers...]`
+- Throws exception for negative numbers (shows all negatives)
+- Ignores numbers greater than 1000
+
+---
+
+## 🔧 How to Run
+
+### Prerequisites:
+- Dart SDK installed
+
+### Run Tests:
+```bash
+dart test
