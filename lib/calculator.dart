@@ -20,6 +20,6 @@ class Calculator {
       throw FormatException('negatives not allowed: ${negatives.join(', ')}');
     }
 
-    return nums.reduce((a, b) => a + b);
+    return nums.where((n) => n <= 1000).reduce((a, b) => a + b);
   }
 }
