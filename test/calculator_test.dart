@@ -17,4 +17,8 @@ test('returns the sum of two comma-separated numbers', () {
   final calculator = Calculator();
   expect(calculator.add('1,2'), equals(3));
 });
+test('returns the sum of multiple comma-separated numbers', () {
+  final calculator = Calculator();
+  expect(calculator.add('1,2,3,4'), equals(10));
+});
 }
