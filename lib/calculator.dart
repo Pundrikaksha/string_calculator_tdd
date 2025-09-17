@@ -6,6 +6,8 @@ class Calculator {
       return int.parse(numbers);
     }
 
-    throw UnimplementedError(); // placeholder for future steps
+    final parts = numbers.split(',');
+    final sum = parts.map(int.parse).reduce((a, b) => a + b);
+    return sum;
   }
 }
